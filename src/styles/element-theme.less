@@ -1,0 +1,32 @@
+// Element Plus 主题色配置
+:root {
+  // 主要颜色 - 与Naive UI保持一致
+  --el-color-primary: #2759cd;
+  --el-color-primary-light-3: #5078e1;
+  --el-color-primary-light-5: #7b96ea;
+  --el-color-primary-light-7: #a6b4f3;
+  --el-color-primary-light-8: #c1ccfa;
+  --el-color-primary-light-9: #e0e6fe;
+  --el-color-primary-dark-2: #1f47a3;
+}
+
+// Element Plus 官方主题配置 - 使用CSS变量方式
+:root {
+  // Element Plus 主色调配置 - 与Naive UI保持一致
+  --el-color-primary: #2759cd;
+
+  // Element Plus 会自动生成这些衍生色，但我们也可以手动指定
+  --el-color-primary-light-3: rgba(39, 89, 205, 0.7);
+  --el-color-primary-light-5: rgba(39, 89, 205, 0.5);
+  --el-color-primary-light-7: rgba(39, 89, 205, 0.3);
+  --el-color-primary-light-8: rgba(39, 89, 205, 0.2);
+  --el-color-primary-light-9: rgba(39, 89, 205, 0.1);
+  --el-color-primary-dark-2: rgba(39, 89, 205, 0.8);
+}
+
+/* === 项目专用颜色变量（Tailwind无法直接实现的特定颜色） === */
+:root {
+  --detail-primary-text: #1d1e20;
+  --detail-meta-text: #656772;
+  --detail-primary-blue: #2759cd;
+}

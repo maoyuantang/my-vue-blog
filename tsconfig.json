@@ -1,11 +1,46 @@
+// tsconfig.json
 {
-  "files": [],
+  "compilerOptions": {
+    "types": [
+      "vite/client"
+    ],
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@shared/*": [
+        "shared-lib/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "shared-lib/**/*.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.app.json"
     }
   ]
 }
